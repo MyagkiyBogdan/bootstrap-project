@@ -1,0 +1,26 @@
+:root {
+  --main-color: #05b1b1;
+  --accent-color: #52339a;
+}
+
+.header {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: url(../img/pattern.png),
+    -webkit-gradient(linear, left top, right top, from(var(--main-color)), to(var(--accent-color)));
+  background-image: url(../img/pattern.png),
+    -o-linear-gradient(left, var(--main-color), var(--accent-color));
+  background-image: url(../img/pattern.png),
+    linear-gradient(to right, var(--main-color), var(--accent-color));
+  background-size: contain;
+}
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
