@@ -16,11 +16,11 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 class="text-center text-white">
+            <h1 class="text-center text-white header__titile">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, iusto.
             </h1>
-            <div class="play-btn">
-              <div class="play-triangle"></div>
+            <div class="play-btn" data-bs-toggle="modal" data-bs-target="#Modal">
+              <div class="play-btn__triangle"></div>
             </div>
 
             <a href="#footer" class="btn btn-info tn-lg text-uppercase text-white go-button"
@@ -30,7 +30,73 @@
         </div>
       </div>
     </header>
+    <section class="about section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center text-uppercase mb-5 main-tc">About us</h2>
+          </div>
+          <div class="row">
+            <div class="col-xl-4 col-md-6 col-sm-12">
+              <div class="section__circle"><span class="icon-list-numbered"></span></div>
+              <h5 class="">Structured material</h5>
+              <div class="line"></div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+              <div class="section__circle"><span class="icon-list-numbered"></span></div>
+              <h5 class="">Structured material</h5>
+              <div class="line"></div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+              <div class="section__circle"><span class="icon-list-numbered"></span></div>
+              <h5 class="">Structured material</h5>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer id="footer" class="footer"></footer>
+
+    <div
+      class="modal fade"
+      id="Modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Adaptive video</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="embed-container">
+              <iframe
+                src="https://www.youtube.com/embed/3jzvHNoAE2I"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a
+              href="https://www.youtube.com/watch?v=3jzvHNoAE2I&feature=emb_title"
+              target="_blank"
+              class="btn btn-primary"
+              >Watch on YouTube</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
