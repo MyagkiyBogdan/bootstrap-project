@@ -6,13 +6,26 @@
 .header {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(../img/pattern.png),
-    -webkit-gradient(linear, left top, right top, from(var(--main-color)), to(var(--accent-color)));
-  background-image: url(../img/pattern.png),
-    -o-linear-gradient(left, var(--main-color), var(--accent-color));
-  background-image: url(../img/pattern.png),
-    linear-gradient(to right, var(--main-color), var(--accent-color));
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(5, 177, 177, 0.7)),
+      to(rgba(82, 51, 154, 0.7))
+    ),
+    url(../img/koala-bg.png);
+  background-image: -o-linear-gradient(left, rgba(5, 177, 177, 0.7), rgba(82, 51, 154, 0.7)),
+    url(../img/koala-bg.png);
+  background-image: linear-gradient(to right, rgba(5, 177, 177, 0.7), rgba(82, 51, 154, 0.7)),
+    url(../img/koala-bg.png);
   background-size: contain;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .header {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
 }
 
 .section {
@@ -79,6 +92,7 @@
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
+  font-size: 24px;
 }
 
 .main-tc {
