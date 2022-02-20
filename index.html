@@ -12,11 +12,75 @@
     <title>Koalas-Bootstrap-project</title>
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 class="text-center text-white header__titile">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input
+                    class="form-control mr-sm-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-center text-white hero__titile">
               Hi, I'm a project created with the using Bootstrap and I'm going to tell you about the
               koalas! Would you like to know more about these wonderful animals?
             </h1>
@@ -28,7 +92,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </section>
     <section class="about section">
       <div class="container">
         <div class="row">
@@ -199,7 +263,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="text-center mb-5 acc-tc">What problems do koalas have?</h2>
+            <h2 class="text-center mb-5 acc-tc">What problems koalas have?</h2>
           </div>
         </div>
 
@@ -615,7 +679,154 @@
         </div>
       </div>
     </section>
-    <footer id="footer" class="footer"></footer>
+    <section class="section behaviour">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5 main-tc">Ecology and behaviour</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-9 col-lg-12">
+            <p class="mb-3 beh__text">
+              Koalas are herbivorous, and while most of their diet consists of eucalypt leaves, they
+              can be found in trees of other genera, such as Acacia, Allocasuarina, Callitris,
+              Leptospermum, and Melaleuca.Though the foliage of over 600 species of Eucalyptus is
+              available, the koala shows a strong preference for around They tend to choose species
+              that have a high protein content and low proportions of fibre and lignin. The most
+              favoured species are Eucalyptus microcorys, E. tereticornis, and E. camaldulensis,
+              which, on average, make up more than 20% of their diet.
+            </p>
+            <p class="beh__text">
+              Despite its reputation as a fussy eater, the koala is more generalist than some other
+              marsupial species, such as the greater glider. Since eucalypt leaves have a high water
+              content, the koala does not need to drink often;its daily water turnover rate ranges
+              from 71 to 91 ml/kg of body weight. Although females can meet their water requirements
+              from eating leaves, larger males require additional water found on the ground or in
+              tree hollows. When feeding, a koala holds onto a branch with hindpaws and one forepaw
+              while the other forepaw grasps foliage. Small koalas can move close to the end of a
+              branch, but larger ones stay near the thicker bases.Koalas consume up to 400 grams (14
+              oz) of leaves a day, spread over four to six feeding sessions. Despite their
+              adaptations to a low-energy lifestyle, they have meagre fat reserves and need to feed
+              often.
+            </p>
+          </div>
+          <div class="col-xl-3 col-gl-12 text-center">
+            <img src="./img/koala-name.png" alt="" class="img-fluid name__img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section support">
+      <div class="container">
+        <div class="row">
+          <div class="col-12"><h2 class="text-center mb-5 acc-tc">Ecology and behaviour</h2></div>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-md-6 col-sm-12 text-center">
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 col-sm-12 text-center">
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 col-sm-12 text-center">
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 col-sm-12 text-center">
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="icon__list">
+              <a href="" target="_blank" class="footer__icon btn btn-outline-light"
+                ><span class="icon-facebook-circled"></span
+              ></a>
+              <a href="" target="_blank" class="footer__icon btn btn-outline-light"
+                ><span class="icon-github-circled-alt2"></span
+              ></a>
+              <a href="" target="_blank" class="footer__icon btn btn-outline-light"
+                ><span class="icon-twitter-circled"></span
+              ></a>
+              <a href="" target="_blank" class="footer__icon btn btn-outline-light"
+                ><span class="icon-linkedin"></span
+              ></a>
+              <a href="" target="_blank" class="footer__icon btn btn-outline-light"
+                ><span class="icon-telegram"></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <div
       class="modal fade"
