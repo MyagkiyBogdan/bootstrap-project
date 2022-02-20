@@ -16,60 +16,52 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                  </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                  <input
-                    class="form-control mr-sm-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"
+                  ><img src="./img/logo.png" alt="logo" class="logo__nav"
+                /></a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./index.html"
+                        >Koalas Info</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Page Navigation
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#facts">Facts</a></li>
+                        <li><a class="dropdown-item" href="#problems">Problems</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#behaviours">Behaviours</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </nav>
           </div>
@@ -153,7 +145,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="text-center mb-5 acc-tc">Three facts about koalas</h2>
+            <h2 class="text-center mb-5 acc-tc" id="facts">Three facts about koalas</h2>
             <div
               id="carouselExampleWhite"
               class="carousel carousel-White slide"
@@ -263,7 +255,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="text-center mb-5 acc-tc">What problems koalas have?</h2>
+            <h2 class="text-center mb-5 acc-tc" id="problems">What problems koalas have?</h2>
           </div>
         </div>
 
@@ -683,7 +675,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="text-center mb-5 main-tc">Ecology and behaviour</h2>
+            <h2 class="text-center mb-5 main-tc" id="behaviours">Ecology and behaviour</h2>
           </div>
         </div>
         <div class="row">
@@ -720,7 +712,9 @@
     <section class="section support">
       <div class="container">
         <div class="row">
-          <div class="col-12"><h2 class="text-center mb-5 acc-tc">Ecology and behaviour</h2></div>
+          <div class="col-12">
+            <h2 class="text-center mb-5 acc-tc">IDK2</h2>
+          </div>
         </div>
         <div class="row">
           <div class="col-xl-3 col-md-6 col-sm-12 text-center">
@@ -805,7 +799,10 @@
     <footer id="footer" class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-12 text-center">
+          <div class="col-12 text-center d-flex align-items-center">
+            <a class="navbar-brand" href="./index.html"
+              ><img src="./img/logo.png" alt="logo" class="logo logo__footer"
+            /></a>
             <div class="icon__list">
               <a href="" target="_blank" class="footer__icon btn btn-outline-light"
                 ><span class="icon-facebook-circled"></span
